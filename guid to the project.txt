@@ -1,0 +1,42 @@
+In this project I used Node.Js for the server side using express.
+Created and API endpoint with a JSON file to retrieve the 
+data to display.
+
+For the frontend I used React with Vite.
+
+The frontend fetches the top 5 images/products from the API
+and displays them in a card format with the picture, keyword
+and score.
+
+A user is able to search the API with certain keywords or 
+display images/products randomly.
+If a keyword is searched and not contained in the API a message
+is displayed saying "no product exsits for that keyword".
+
+A user is also able to update the score and it also updates
+the score on the API side.
+
+CSS and Bootstrap is used for styling.
+ 
+I was not able to use the API links for the images that were
+provided. For some reason React and HTML do not read Google
+drive links correctly and the images were not displaying. I 
+then downloaded the images locally and used the local links
+in the API.
+
+To run the app install:
+
+
+npm install express body-parser fs - allow server to read the objects
+npm install axios - used to make the HTTP requests
+npm install bootstrap - used for styling
+npm install react-bootstrap - used for styling
+npm install cors - used to allow these cross-domain requests as backend and frontend are running on different domains.
+
+
+
+Run the backend:
+node server.js
+
+Run the frontend:
+npm run dev
